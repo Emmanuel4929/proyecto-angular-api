@@ -1,0 +1,29 @@
+<p>lista-comentarios works!</p>
+
+<div class="container">
+  <h2>Lista De Comentarios</h2>
+  <ul class="list-unstyled">
+    <li *ngFor="let listadocomentarios of comentarios; let i = index">
+      <div class="card" style="width: 30rem">
+        <div class="card-header">Numero De Comentario {{ i }}</div>
+        <ul class="list-group list-flush">
+          <li class="list-group-item">
+            <span><b>portid:</b>{{ listadocomentarios.postId }}</span>
+          </li>
+          <li class="list-group-item">
+            <span><b>id: </b>{{ listadocomentarios.id }}</span>
+          </li>
+          <li class="list-group-item">
+            <span><b> Nombre:</b>{{ listadocomentarios.name }}</span>
+          </li>
+          <li class="list-group-item">
+            <span><b> email:</b>{{ listadocomentarios.email }}</span>
+          </li>
+          <li class="list-group-item">
+            <span><b>Comentario: </b>{{ listadocomentarios.body }}</span>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
